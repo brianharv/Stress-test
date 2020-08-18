@@ -12,41 +12,46 @@
   <body>
     <div class="container">
       <h2>Stress Test</h2>
-      <form id="warningsigns">
-        <div class="form=group">
-          <p>In the past week, I have felt one or serval of the following warning signs. Select all that apply:</p>
-          <input type="checkbox" name="warning-signs" value="sleep"> Lack of sleep. <br>
-          <input type="checkbox" name="warning-signs" value="anxiety"> Felt anxious. <br>
-          <input type="checkbox" name="warning-signs" value="appetite"> Loss or lack of appetite. <br>
-          <input type="checkbox" name="warning-signs" value="headache"> Suffered headaches. <br>
-          <input type="checkbox" name="warning-signs" value="energy"> Low energy. <br>
-        </div>
-      </form>
-      <form id="healthsymptoms">
-        <div class="form=group">
-          <p>In the past week, I have felt one or serval of the following symptoms. Select all that apply:</p>
-          <input type="checkbox" name="symptoms" value="stomach"> Upset Stomach. <br>
-          <input type="checkbox" name="symptoms" value="muscle"> Muscle tension. <br>
-          <input type="checkbox" name="symptoms" value="infections"> Frequent colds and infections. <br>
-          <input type="checkbox" name="symptoms" value="sexual"> Loss of sexual desire and/or ability. <br>
-          <input type="checkbox" name="symptoms" value="chest"> Chest pain and rapid heartbeat. <br>
-        </div>
-      </form>
-      <form id="coping">
-        <div class="form=group">
-          <p>Attempt to employ one or more of the following coping mechanisms:</p>
-          <input type="checkbox" name="coping" value="exercise"> Get more exercise <br>
-          <input type="checkbox" name="coping" value="expectations"> Lowering your expectations. <br>
-          <input type="checkbox" name="coping" value="responsibility"> Taking responsibility for the situation. <br>
-          <input type="checkbox" name="coping" value="emotion"> Maintain emotionally supportive relationships <br>
-          <input type="checkbox" name="coping" value="ask"> Asking for help. <br>
-        </div>
-        <button type="submit" class="btn-primary"> Submit Survey </button>
-      </form>
-      <span id="form-output">
-        <p>You felt </p>
+        <form id="stress-survey">
+          <div class="form-group" id="warningsigns">
+            <p>In the past week, I have felt one or serval of the following warning signs. Select all that apply:</p>
+            <input type="checkbox" name="warning-signs" value="sleep"> Lack of sleep. <br>
+            <input type="checkbox" name="warning-signs" value="anxiety"> Felt anxious. <br>
+            <input type="checkbox" name="warning-signs" value="appetite"> Loss or lack of appetite. <br>
+            <input type="checkbox" name="warning-signs" value="headache"> Suffered headaches. <br>
+            <input type="checkbox" name="warning-signs" value="energy"> Low energy. <br>
+          </div>
+          <div class="form-group" id="healthsymptoms">
+            <p>In the past week, I have felt one or serval of the following symptoms. Select all that apply:</p>
+            <input type="checkbox" name="symptoms" value="stomach"> Upset Stomach. <br>
+            <input type="checkbox" name="symptoms" value="muscle"> Muscle tension. <br>
+            <input type="checkbox" name="symptoms" value="infections"> Frequent colds and infections. <br>
+            <input type="checkbox" name="symptoms" value="sexual"> Loss of sexual desire and/or ability. <br>
+            <input type="checkbox" name="symptoms" value="chest"> Chest pain and rapid heartbeat. <br>
+          </div>
+          <div class="form-group" id="coping">
+            <p>Which, if any of these coping mechanisms have you employed? Select all that apply:</p>
+            <input type="checkbox" name="coping" value="exercise"> Get more exercise <br>
+            <input type="checkbox" name="coping" value="expectations"> Lowering your expectations. <br>
+            <input type="checkbox" name="coping" value="responsibility"> Taking responsibility for the situation. <br>
+            <input type="checkbox" name="coping" value="emotion"> Maintain emotionally supportive relationships <br>
+            <input type="checkbox" name="coping" value="ask"> Asking for help. <br>
+          </div>
+          <button type="submit" class="btn-primary"> Submit Survey </button>
+        </form>
+      </div>  
+      <div class="outputs">
+      <span id="warningsigns-output">
+        <p>Sounds like you're pretty stressed out. Please consider the following coping mechanisms </p>
       </span>
-    </div>
-
+      <br>
+      <span id="healthsymptoms-output">
+        <p>You experienced the following health symptoms: </p>
+      </span>
+      <br>
+      <span id="coping-output">
+        <p>Sounds like you are managing your stress well. Keep up the good work. </p>
+      </span>
+      </div>
   </body>
 </html>
